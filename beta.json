@@ -2,7 +2,7 @@
   "channel": "beta",
   "version": "2026.07.0-beta.1",
   "released": "2026-07-31T18:17:12Z",
-  "image": "docker.jjagd.net/remaestro@sha256:169c6b65be8cbdb29a46e5d50f4c0b6538f94b429976180f308584470137b921",
+  "image": "ghcr.io/redth/remaestro@sha256:169c6b65be8cbdb29a46e5d50f4c0b6538f94b429976180f308584470137b921",
   "system": {"version": "2026.07.0-beta.1", "url": "https://s3.jjagd.net/remaestro/beta/system/remaestro-2026.07.0-beta.1.raucb", "sha256": "e4a3a9f37598ac01ea9c45b59a815d002f0bcef7adabc0bad6e8e3348277d385", "notes": "Rootfs update: Debian userspace and the app baseline. Reboots the box."},
   "minimumFrom": "",
   "notes": "First locally-published beta cut (2026.07.0-beta.1).",
