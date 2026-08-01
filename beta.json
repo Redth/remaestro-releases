@@ -1,10 +1,10 @@
 {
   "channel": "beta",
-  "version": "2026.07.0-beta.1",
-  "released": "2026-07-31T18:17:12Z",
-  "image": "ghcr.io/redth/remaestro@sha256:169c6b65be8cbdb29a46e5d50f4c0b6538f94b429976180f308584470137b921",
-  "system": {"version": "2026.07.0-beta.1", "url": "https://s3.jjagd.net/remaestro/beta/system/remaestro-2026.07.0-beta.1.raucb", "sha256": "e4a3a9f37598ac01ea9c45b59a815d002f0bcef7adabc0bad6e8e3348277d385", "notes": "Rootfs update: Debian userspace and the app baseline. Reboots the box."},
+  "version": "2026.07.0-beta.2",
+  "released": "2026-08-01T17:56:40Z",
+  "image": "ghcr.io/redth/remaestro@sha256:870b6d92f9b5bdaaa8a5d3731f7f3cc80f396ecb46a7749fbec32b323a719f10",
+  "system": {"version": "2026.08-beta", "url": "https://s3.jjagd.net/remaestro/beta/system/remaestro-2026.08-beta.raucb", "sha256": "f35d7d0c242b45d37682e20e6868259efdd4d59b5508b1b52f3c8eff21ba00b7", "notes": "Rootfs update: Debian userspace, rauc, the RAUC keyring and the Apple TV build toolchain."},
   "minimumFrom": "",
-  "notes": "First locally-published beta cut (2026.07.0-beta.1).",
-  "packages": {"linux-arm64": {"url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.07.0-beta.1-linux-arm64.tar.gz", "sha256": "20a6db7ed68fd00a9c3d81d8b5f59799aa083b9a02e9db54aeceb470c5652faa"}, "linux-x64": {"url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.07.0-beta.1-linux-x64.tar.gz", "sha256": "36cbffb3d1a974cf02d2d18274f8b72de682ffed4adac4377199212140059a87"}}
+  "notes": "Appliance image now ships the Apple TV (pyatv) build toolchain; rauc and the RAUC keyring are baked in.",
+  "packages": {"linux-arm64": {"url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.07.0-beta.2-linux-arm64.tar.gz", "sha256": "0b99692035d6ff3bd2fad33d1edbc73ad8343a727539f0c99b9621204822b961"}, "linux-x64": {"url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.07.0-beta.2-linux-x64.tar.gz", "sha256": "7be0098f8f7d3cc1b325753244543de19cf02269f99693449fc60ef04512cd93"}}
 }
