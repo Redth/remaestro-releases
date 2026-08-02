@@ -1,0 +1,18 @@
+{
+  "channel": "stable",
+  "version": "2026.08.0-beta.1",
+  "released": "2026-08-02T14:47:24Z",
+  "image": "ghcr.io/redth/remaestro@sha256:18b7654c010a9fd76ce742cfa4bcd775389737afa6fddc66b8b30fc28c0a3ff6",
+  "minimumFrom": "",
+  "notes": "First stable cut. Same build as beta 2026.08.0-beta.1, which has been running on real hardware; promoted unchanged rather than rebuilt, so these are the bytes that were tested.",
+  "packages": {
+    "linux-arm64": {
+      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.1-linux-arm64.tar.gz",
+      "sha256": "7515a4be1a2605ae168b7afe6c1ce09ab644d44bcc2f81e1f01b523ed65a68bb"
+    },
+    "linux-x64": {
+      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.1-linux-x64.tar.gz",
+      "sha256": "2b1cb82de7066a092694ce18bae708fb6e1f70426bfbc3f954e387dade79c6a2"
+    }
+  }
+}
