@@ -1,8 +1,8 @@
 {
   "channel": "beta",
-  "version": "2026.08.0-beta.3",
-  "released": "2026-08-02T19:35:24Z",
-  "image": "docker.jjagd.net/remaestro@sha256:a5202d19f4e45213c67736072adbdb637f6e3f68f0338f806098254e7d4e0732",
+  "version": "2026.08.0-beta.4",
+  "released": "2026-08-02T21:35:37Z",
+  "image": "docker.jjagd.net/remaestro@sha256:37462b4a70e7feb0a10693e24bc67a416eb6c600b023426b66ae69bf511095cb",
   "system": {
     "version": "2026.09-beta",
     "url": "https://s3.jjagd.net/remaestro/beta/system/remaestro-2026.09-beta.raucb",
@@ -10,15 +10,15 @@
     "notes": "Test cut: exercises the A/B slot write, tryboot and auto-rollback."
   },
   "minimumFrom": "",
-  "notes": "Proxies can be saved at all: a computed property made every write of a proxy device throw, so boards could never check in. Installable OS updates, with the system install sending the RAUC bundle rather than the app tarball. Adds the optional cloud service and a backup tab. Update failures now say which failure it was.",
+  "notes": "Linking a hub to the cloud now works end to end: the hub shows a short code, you approve it signed in at cloud.remaestro.app, and the hub collects its own token. The previous flow needed a code only an administrator could mint, which nothing could reach.",
   "packages": {
     "linux-arm64": {
-      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.3-linux-arm64.tar.gz",
-      "sha256": "c1831353981650b36fbf963fb3ae377bd99e0361bd9347dd02c621fe6cfefaf4"
+      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.4-linux-arm64.tar.gz",
+      "sha256": "49bdbd95263c6ae316ec5f4b7aacf9c1e2c7a9b8e0c5855bb7cc33b3afa7e7b3"
     },
     "linux-x64": {
-      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.3-linux-x64.tar.gz",
-      "sha256": "1a8d4b662c3adcdb6249495b9b01b01b8da901988cbac4906d945681b9867c99"
+      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.4-linux-x64.tar.gz",
+      "sha256": "28e6031a1efdc6d405784c0fdfabfb80d3e35d4232cd717023c5fac6c54a68d4"
     }
   }
 }
