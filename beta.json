@@ -1,8 +1,8 @@
 {
   "channel": "beta",
-  "version": "2026.08.0-beta.6",
-  "released": "2026-08-03T01:32:55Z",
-  "image": "docker.jjagd.net/remaestro@sha256:528e896399bc3748dfb311706067eff3487b96bbbcd0007462359d53835efed2",
+  "version": "2026.08.0-beta.7",
+  "released": "2026-08-03T17:24:30Z",
+  "image": "docker.jjagd.net/remaestro@sha256:b60dde30b044c6af1ef64b8fe0e7fc3ef9a0f89a9acf63d29707cc9f3591abc6",
   "system": {
     "version": "2026.09-beta",
     "url": "https://s3.jjagd.net/remaestro/beta/system/remaestro-2026.09-beta.raucb",
@@ -10,15 +10,15 @@
     "notes": "Test cut: exercises the A/B slot write, tryboot and auto-rollback."
   },
   "minimumFrom": "",
-  "notes": "The projector chain: a custom ESP32 answering text/plain with a JSON body is now read as JSON, so a status mapping written for it works. Says why a button reached nothing, why a device stayed on, and why a mapping failed, instead of one sentence covering four causes. Both remotes now agree which box a subtitle button goes to.",
+  "notes": "Home shows the console's device cards, and tapping one opens that device's own remote rather than whichever activity remote happened to mention it. A device with no saved view gets one from the closest template; a lamp says so instead of pretending. Phones are no longer redirected into the admin console, which had been sending everyone who isn't an administrator to an access-denied page.",
   "packages": {
     "linux-arm64": {
-      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.6-linux-arm64.tar.gz",
-      "sha256": "9225a9603d60c8ba4da2eff49624d57aa403a3f9eba92211d3cc699c3111af74"
+      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.7-linux-arm64.tar.gz",
+      "sha256": "f80210f939e4a8c0691d83bfa70867c78a9461ead2f8b55dcd3a59af0b004226"
     },
     "linux-x64": {
-      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.6-linux-x64.tar.gz",
-      "sha256": "24003efb56b3e9dc9b032c9408771e81f085a15a1c5aa93e5420a8ba80540d66"
+      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.7-linux-x64.tar.gz",
+      "sha256": "29b841e8d4fb7defa483fe79304cfd303d8ee31ca93936ee03d92ad4296acbed"
     }
   }
 }
