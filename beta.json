@@ -1,8 +1,8 @@
 {
   "channel": "beta",
-  "version": "2026.08.0-beta.7",
-  "released": "2026-08-03T17:24:30Z",
-  "image": "docker.jjagd.net/remaestro@sha256:b60dde30b044c6af1ef64b8fe0e7fc3ef9a0f89a9acf63d29707cc9f3591abc6",
+  "version": "2026.08.0-beta.9",
+  "released": "2026-08-08T23:56:58Z",
+  "image": "docker.jjagd.net/remaestro@sha256:09096d1c24b1a34413299e3e3ceacef57570c33d5ceeb7d52b298db7381b1586",
   "system": {
     "version": "2026.09-beta",
     "url": "https://s3.jjagd.net/remaestro/beta/system/remaestro-2026.09-beta.raucb",
@@ -10,15 +10,15 @@
     "notes": "Test cut: exercises the A/B slot write, tryboot and auto-rollback."
   },
   "minimumFrom": "",
-  "notes": "Home shows the console's device cards, and tapping one opens that device's own remote rather than whichever activity remote happened to mention it. A device with no saved view gets one from the closest template; a lamp says so instead of pretending. Phones are no longer redirected into the admin console, which had been sending everyone who isn't an administrator to an access-denied page.",
+  "notes": "Activity designer: debug mode, a toolbox that reaches the canvas, inline device expansion and popover help. Voice capture reworked onto the Web Speech API, with Shiny.Speech for capture on mobile. Sixteen toggles now announce themselves as toggles. ESP32 proxy firmware 0.2.1, and the flash page advertises the version it actually installs.",
   "packages": {
     "linux-arm64": {
-      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.7-linux-arm64.tar.gz",
-      "sha256": "f80210f939e4a8c0691d83bfa70867c78a9461ead2f8b55dcd3a59af0b004226"
+      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.9-linux-arm64.tar.gz",
+      "sha256": "1c6d5ecbe625e80c17363e39bbc6984257fa872547e3e62243c88c8816792fab"
     },
     "linux-x64": {
-      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.7-linux-x64.tar.gz",
-      "sha256": "29b841e8d4fb7defa483fe79304cfd303d8ee31ca93936ee03d92ad4296acbed"
+      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.9-linux-x64.tar.gz",
+      "sha256": "5a1ceecf115e5a67e5d7624b4606410b82457ab1d122dd7d3691b56e16d7ea1f"
     }
   }
 }
