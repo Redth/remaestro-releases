@@ -1,24 +1,48 @@
 {
   "channel": "beta",
-  "version": "2026.08.0-beta.10",
-  "released": "2026-08-09T02:12:56Z",
-  "image": "docker.jjagd.net/remaestro@sha256:14d3175201a2c23412a6b816194e8604cdff41459dc9bdbd6404322719267c69",
+  "version": "2026.08.0-beta.11",
+  "released": "2026-08-09T12:48:35Z",
+  "image": "docker.jjagd.net/remaestro@sha256:266183e0664988413ec76d5956880cd9ad929cbbc4dbdba2157aeab099c62e86",
   "system": {
     "version": "2026.10-beta",
     "url": "https://s3.jjagd.net/remaestro/beta/system/remaestro-2026.10-beta.raucb",
     "sha256": "fc41cf5deaacab73ce1d9655c8b4744c089143c4d524393de3f0604b3e7070db",
     "notes": "Second test cut for the A/B path, built for both Pi 4 and Pi 5. Carries app 2026.08.0-beta.9."
   },
+  "proxy": {
+    "version": "0.2.1",
+    "images": {
+      "esp32": {
+        "url": "https://s3.jjagd.net/remaestro/beta/remaestro-proxy-esp32-0.2.1-app.bin",
+        "sha256": "39d1923f0990d2d3bbe1caafadee1c2f042510fcb62bd8960d829b57a9ad9637",
+        "md5": "ab67aa9104a593f1478dc89fd1863fe9",
+        "size": 1408080
+      },
+      "esp32s3": {
+        "url": "https://s3.jjagd.net/remaestro/beta/remaestro-proxy-esp32s3-0.2.1-app.bin",
+        "sha256": "012a852466266304028722c051a05ae093b3b1932ae43d3ae76cd2438a6095c1",
+        "md5": "ae0ec6bb1648b653ebd1348e37eb51d9",
+        "size": 1337520
+      },
+      "esp32c3": {
+        "url": "https://s3.jjagd.net/remaestro/beta/remaestro-proxy-esp32c3-0.2.1-app.bin",
+        "sha256": "b32c14394b23b9cd0102be9eab15b948863b3d44ad7151dfc422054b916c9672",
+        "md5": "48f2ea13795cf61074016b523e386655",
+        "size": 1498976
+      }
+    },
+    "notes": "The hub can take proxy firmware from the release feed instead of only from its own image, so a board no longer has to wait for a hub release to move. It verifies the SHA-256 in the signed manifest before anything is offered, caches one version at a time, and never downgrades a board. The firmware built into the hub stays as the floor: a house with no internet still updates its own boards."
+  },
   "minimumFrom": "",
-  "notes": "An appliance can update its own proxy boards. The native tarball now carries the ESP32 binaries and ota.json the container image always had, so a hub installed from the SD image can push firmware over the air and install a board over USB from its own console \u2014 both of which silently did nothing before. Nothing changed for a hub running in Docker.",
+  "notes": "The hub can take proxy firmware from the release feed instead of only from its own image, so a board no longer has to wait for a hub release to move. It verifies the SHA-256 in the signed manifest before anything is offered, caches one version at a time, and never downgrades a board. The firmware built into the hub stays as the floor: a house with no internet still updates its own boards.",
   "packages": {
     "linux-arm64": {
-      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.10-linux-arm64.tar.gz",
-      "sha256": "06e58f395c072706e352a85c4190484ae0d06b6fedae8c624123700b56c60a44"
+      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.11-linux-arm64.tar.gz",
+      "sha256": "e3640eb67fac135d6646e5dc4186798f2db8e8bdf1636c8b1f7cd8086738181a"
     },
     "linux-x64": {
-      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.10-linux-x64.tar.gz",
-      "sha256": "373639a7b9b92ce9ac5ce8bc0ce620d88c56cca206a146dc334b3a40c8010ccc"
+      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.11-linux-x64.tar.gz",
+      "sha256": "885b06b4db8d3f11c5f82b3a9cd89a36e02e1ec2c8979ed5ac355612ef2c79ff"
     }
   }
 }
