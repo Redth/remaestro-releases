@@ -1,13 +1,13 @@
 {
   "channel": "beta",
   "version": "2026.08.0-beta.9",
-  "released": "2026-08-08T23:56:58Z",
+  "released": "2026-08-09T00:14:46Z",
   "image": "docker.jjagd.net/remaestro@sha256:09096d1c24b1a34413299e3e3ceacef57570c33d5ceeb7d52b298db7381b1586",
   "system": {
-    "version": "2026.09-beta",
-    "url": "https://s3.jjagd.net/remaestro/beta/system/remaestro-2026.09-beta.raucb",
-    "sha256": "c93f40d3d48323baf86a8333e5ec8b788e19278063b7c9373d92128e1b9e8a7e",
-    "notes": "Test cut: exercises the A/B slot write, tryboot and auto-rollback."
+    "version": "2026.10-beta",
+    "url": "https://s3.jjagd.net/remaestro/beta/system/remaestro-2026.10-beta.raucb",
+    "sha256": "fc41cf5deaacab73ce1d9655c8b4744c089143c4d524393de3f0604b3e7070db",
+    "notes": "Second test cut for the A/B path, built for both Pi 4 and Pi 5. Carries app 2026.08.0-beta.9."
   },
   "minimumFrom": "",
   "notes": "Activity designer: debug mode, a toolbox that reaches the canvas, inline device expansion and popover help. Voice capture reworked onto the Web Speech API, with Shiny.Speech for capture on mobile. Sixteen toggles now announce themselves as toggles. ESP32 proxy firmware 0.2.1, and the flash page advertises the version it actually installs.",
