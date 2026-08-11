@@ -1,48 +1,48 @@
 {
   "channel": "beta",
-  "version": "2026.08.0-beta.11",
-  "released": "2026-08-09T12:48:35Z",
-  "image": "docker.jjagd.net/remaestro@sha256:266183e0664988413ec76d5956880cd9ad929cbbc4dbdba2157aeab099c62e86",
+  "version": "2026.08.0-beta.12",
+  "released": "2026-08-11T22:17:47Z",
+  "image": "docker.jjagd.net/remaestro@sha256:58016dc5932251fa516f759d27d113e4e7a68c1c919a794177be97d38dea321f",
   "system": {
-    "version": "2026.10-beta",
-    "url": "https://s3.jjagd.net/remaestro/beta/system/remaestro-2026.10-beta.raucb",
-    "sha256": "fc41cf5deaacab73ce1d9655c8b4744c089143c4d524393de3f0604b3e7070db",
-    "notes": "Second test cut for the A/B path, built for both Pi 4 and Pi 5. Carries app 2026.08.0-beta.9."
+    "version": "2026.11-beta",
+    "url": "https://s3.jjagd.net/remaestro/beta/system/remaestro-2026.11-beta.raucb",
+    "sha256": "e149450b81162199b44a4aabedf5dc93f03b128b024cff980e87740c94ee5b27",
+    "notes": "Pi Imager customisation works on our cards: Wi-Fi, hostname and the login you set on the Imager screen are applied on first boot instead of silently losing the hub."
   },
   "proxy": {
-    "version": "0.2.1",
+    "version": "0.2.2",
     "images": {
       "esp32": {
-        "url": "https://s3.jjagd.net/remaestro/beta/remaestro-proxy-esp32-0.2.1-app.bin",
-        "sha256": "39d1923f0990d2d3bbe1caafadee1c2f042510fcb62bd8960d829b57a9ad9637",
-        "md5": "ab67aa9104a593f1478dc89fd1863fe9",
-        "size": 1408080
+        "url": "https://s3.jjagd.net/remaestro/beta/remaestro-proxy-esp32-0.2.2-app.bin",
+        "sha256": "ecb849ba8d0bd349d7187490c56c6cb2bd91de0b31666934e5b5def231f09797",
+        "md5": "e4c6c27abfd24409f2e3159871330263",
+        "size": 1413264
       },
       "esp32s3": {
-        "url": "https://s3.jjagd.net/remaestro/beta/remaestro-proxy-esp32s3-0.2.1-app.bin",
-        "sha256": "012a852466266304028722c051a05ae093b3b1932ae43d3ae76cd2438a6095c1",
-        "md5": "ae0ec6bb1648b653ebd1348e37eb51d9",
-        "size": 1337520
+        "url": "https://s3.jjagd.net/remaestro/beta/remaestro-proxy-esp32s3-0.2.2-app.bin",
+        "sha256": "9aeccbe6d4c56941e9fe1d10e0c4690da72683d2eec1f22c7f5c1e7d174e4a72",
+        "md5": "3aab14e0506577dc4fb002002e6e4264",
+        "size": 1432432
       },
       "esp32c3": {
-        "url": "https://s3.jjagd.net/remaestro/beta/remaestro-proxy-esp32c3-0.2.1-app.bin",
-        "sha256": "b32c14394b23b9cd0102be9eab15b948863b3d44ad7151dfc422054b916c9672",
-        "md5": "48f2ea13795cf61074016b523e386655",
-        "size": 1498976
+        "url": "https://s3.jjagd.net/remaestro/beta/remaestro-proxy-esp32c3-0.2.2-app.bin",
+        "sha256": "8143534d66464a602af0b1db2b11cfdbbecb5a7a0f18415e54027606b47b9c8a",
+        "md5": "5cfd97875c198480828bbb867b3d41e1",
+        "size": 1504592
       }
     },
-    "notes": "The hub can take proxy firmware from the release feed instead of only from its own image, so a board no longer has to wait for a hub release to move. It verifies the SHA-256 in the signed manifest before anything is offered, caches one version at a time, and never downgrades a board. The firmware built into the hub stays as the floor: a house with no internet still updates its own boards."
+    "notes": "Zones and the remote sheet work again: eleven contract handlers were never registered. A device taken out of its last room stays out of it, and a setting taken off it stays off. A television that has just been paired is connected to rather than left for a minute. Playback is no longer claimed for a device the hub cannot see. Faint captions can be read on every surface, in both themes."
   },
   "minimumFrom": "",
-  "notes": "The hub can take proxy firmware from the release feed instead of only from its own image, so a board no longer has to wait for a hub release to move. It verifies the SHA-256 in the signed manifest before anything is offered, caches one version at a time, and never downgrades a board. The firmware built into the hub stays as the floor: a house with no internet still updates its own boards.",
+  "notes": "Zones and the remote sheet work again: eleven contract handlers were never registered. A device taken out of its last room stays out of it, and a setting taken off it stays off. A television that has just been paired is connected to rather than left for a minute. Playback is no longer claimed for a device the hub cannot see. Faint captions can be read on every surface, in both themes.",
   "packages": {
     "linux-arm64": {
-      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.11-linux-arm64.tar.gz",
-      "sha256": "e3640eb67fac135d6646e5dc4186798f2db8e8bdf1636c8b1f7cd8086738181a"
+      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.12-linux-arm64.tar.gz",
+      "sha256": "1b9d60e5207250723c69923dd93164db9bcc35507e6bb42ccb4d02606dc9f979"
     },
     "linux-x64": {
-      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.11-linux-x64.tar.gz",
-      "sha256": "885b06b4db8d3f11c5f82b3a9cd89a36e02e1ec2c8979ed5ac355612ef2c79ff"
+      "url": "https://s3.jjagd.net/remaestro/beta/remaestro-2026.08.0-beta.12-linux-x64.tar.gz",
+      "sha256": "0012ef72c74364cad70dec1ff78c8eb38927df83168358200e77777338e596d8"
     }
   }
 }
